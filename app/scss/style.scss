@@ -1,0 +1,236 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*my*/
+
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+body {
+	background-color: #F8FBFF;
+	font-family: sans-serif;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header {
+	background-color: #000;
+}
+.header__top-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 50px;
+	font-family: 'ProximaNova-Regular', sans-serif;
+	font-size: 14px;
+	line-height: 19px;
+	color: #fff;
+}
+.menu__list {
+	display: flex;
+	align-items: center;
+}
+.menu__item {
+	display: inline-block;
+}
+.menu__item + .menu__item{
+	padding-left: 40px;
+}
+.menu__link {
+	display: flex;
+	align-items: center;
+	gap: 3px;
+}
+.personal-account {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+#phone {
+	color: #fff;
+}
+.mySwiper {
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.banner-main-link img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.mySwiper .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+	position: absolute;
+	text-align: left;
+	bottom: 10%;
+	left: 4%;
+}
+.mobile-banner {
+	display: none;
+}
+/*categories*/
+.categories__wrapper {
+	margin-bottom: 65px;
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+.categories__wrapper-item {
+	width: 48%;
+}
+.categories__item-link img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.banner-second {
+	margin-bottom: 42px;
+}
+.banner-second__wrapper img {
+	width: 100%;
+}
+.banner-second-image-mobile {
+	display: none;
+}
+.company {
+	padding-top: 18px;
+	padding-bottom: 100px;
+	background-color: #fff;
+}
+.companySwiper .swiper-wrapper {
+	align-items: center;
+	justify-content: center;
+}
+.companySwiper .swiper-slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 120px;
+}
+.companySwiper .swiper-slide-active {
+	background-color:#F8FBFF;
+}
+.swiper-button-lock {
+	display: block;
+}
+.swiper-button-left {
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	cursor: pointer;
+	z-index: 10;
+}
+.swiper-button-right {
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	position: absolute;
+	cursor: pointer;
+	z-index: 10;
+}
+
+
+ 
+
+
+
+
+@media (max-width: 991px) {
+  
+}
+
+@media (max-width: 768px) {
+	.banner-img-main {
+	display: none;
+  }
+  .mobile-banner{
+	display: block;
+  }
+  .mySwiper .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+	text-align: center;
+	bottom: 5%;
+	left: 0%;
+  }
+  .categories__wrapper {
+	gap: 16px;
+  }
+  .categories__wrapper-item {
+	width: 100%;
+  }
+  .banner-second-image {
+	display: none;
+  }
+  .banner-second-image-mobile {
+	display: block;
+  }
+}
+@media (max-width: 480px) {
+  
+}
+
+
+	
