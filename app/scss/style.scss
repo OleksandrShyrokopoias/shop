@@ -157,13 +157,17 @@ body {
 	display: none;
 }
 .company {
+	margin-bottom: 30px;
+}
+.company__wrapper {
 	padding-top: 18px;
-	padding-bottom: 100px;
+	padding-bottom: 18px;
 	background-color: #fff;
 }
 .companySwiper .swiper-wrapper {
 	align-items: center;
 	justify-content: center;
+	background-color: #fff;
 }
 .companySwiper .swiper-slide {
 	display: flex;
@@ -178,21 +182,36 @@ body {
 	display: block;
 }
 .swiper-button-left {
-	top: 50%;
-	transform: translateY(-50%);
 	position: absolute;
+	top: 50%;
+	left: 1%;
+	transform: translateY(-50%);
 	cursor: pointer;
 	z-index: 10;
 }
 .swiper-button-right {
+	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	right: 0;
-	position: absolute;
+	right: 1%;
 	cursor: pointer;
 	z-index: 10;
 }
-
+/*seo*/
+.seo__title {
+	margin-bottom: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'ProximaNova-Regular', sans-serif;
+	color: #000;
+}
+.seo__text {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	font-family: 'ProximaNova-Regular', sans-serif;
+	color: #000;
+}
 
  
 

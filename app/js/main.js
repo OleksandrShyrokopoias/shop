@@ -38,7 +38,7 @@ var swiperCompany = new Swiper(".companySwiper", {
         },
       },
       spaceBetween: 0,
-       navigation: {
+      navigation: {
         nextEl: ".swiper-button-right",
         prevEl: ".swiper-button-left",
       },
