@@ -298,7 +298,47 @@ body {
 	color: #000;
 }
 .footer__contacts-adress-link {
+	padding-left: 16px;
+	position: relative;
 	display: block;
+}
+.footer__contacts-adress-link::before {
+	position: absolute;
+	content: url(../images/map-icon.svg);
+	width: 10px;
+	height: 15px;
+	top: 0;
+	left: 0;
+}
+.footer__contacts-adress-link:hover {
+	color: #213FDF;
+}
+.footer__contacts-telephone {
+	position: relative;
+	padding-left: 16px;
+}
+.footer__contacts-telephone::before {
+	position: absolute;
+	content: url(../images/telephone.svg);
+	width: 13.5px;
+	height: 13.5px;
+	top: 0;
+	left: 0;
+}
+.footer__contacts-telephone:hover {
+	color:#213FDF
+}
+.footer_contacts-time-item {
+	position: relative;
+	padding-left: 24px;
+}
+.footer_contacts-time-item::before{
+	position: absolute;
+	content: url(../images/time.svg);
+	width: 20px;
+	height: 20px;
+	top: 0;
+	left: 0;
 }
 .footer__contacts-card {
 	margin-top: 9px;
