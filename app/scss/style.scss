@@ -417,41 +417,82 @@ body {
 .discounts {
 	margin-bottom: 45px;
 }
-.discounts__wrapper {
-}
-.discountsSwiper {
-}
-.product__item {
+.discounts-item {
 	background-color: #fff;
 }
-.product__item-box-capacity {
-}
-.product__item-capacity {
+.product__item {
+	display: block;
+	position: relative;
+	padding: 35px 15px 16px;
 }
 .product__item-img {
+	display: block;
+	margin: 0 auto;
 }
 .product__item-subtitle {
+	margin-top: 35px;
+	margin-bottom: 5px;
+	color: #D0D0D0;
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: bold;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+	text-transform: uppercase;
 }
 .product_item-title {
+	margin-bottom: 12px;
+	color: #000;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	font-family: 'ProximaNova-Semibold', sans-serif;
 }
 .product__item-box-price {
+	margin-bottom: 14px;
+	display: flex;
+	gap: 10px;
 }
 .product__item-price {
+	color: #213FDF;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
+	font-family: 'ProximaNova-Semibold', sans-serif;
 }
 .product__item-price-former {
+	color: #C3C3C3;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+	text-decoration: line-through;
 }
 .product__item-descriptions {
+	display: flex;
+	gap: 5px;
 }
 .product__item-descriptions-left {
+	color: #C3C3C3;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+	text-transform:capitalize;
 }
 .product__item-descriptions-right {
+	color: #000;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	font-family: 'ProximaNova-Semibold', sans-serif;
 }
-.product__item-sale {
+.product__item-sale-img{
+	position: absolute;
+	top: 8px;
+	right: 8px;
 }
-.swiper-button-next {
-}
-.swiper-button-prev {
-}
+
+
 
 
 

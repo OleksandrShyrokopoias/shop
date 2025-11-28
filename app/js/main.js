@@ -44,9 +44,9 @@ var swiperCompany = new Swiper(".companySwiper", {
       },
     });
 
-     var swiper = new Swiper(".discountsSwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
+    var swiperDiscounts = new Swiper(".discountsSwiper", {
+      slidesPerView: 5,
+      spaceBetween: 23,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
