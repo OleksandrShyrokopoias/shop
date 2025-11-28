@@ -43,3 +43,12 @@ var swiperCompany = new Swiper(".companySwiper", {
         prevEl: ".swiper-button-left",
       },
     });
+
+     var swiper = new Swiper(".discountsSwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });

@@ -384,6 +384,74 @@ body {
 	font-weight: 400;
 	font-family: 'ProximaNova-Semibold', sans-serif;
 }
+.error {
+	padding: 34px 0 51px;
+	background-color: #fff;
+}
+.error__title {
+	margin-bottom: 17px;
+	color: #000;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+	text-align: center;
+}
+.error-image {
+	width: 100%;
+}
+.button-error {
+	display: block;
+	width: 340px;
+	margin: 0 auto;
+	padding: 14px 0;
+	background-color: #213FDF;
+	color: #fff;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+	border: none;
+	text-align: center;
+}
+.discounts {
+	margin-bottom: 45px;
+}
+.discounts__wrapper {
+}
+.discountsSwiper {
+}
+.product__item {
+	background-color: #fff;
+}
+.product__item-box-capacity {
+}
+.product__item-capacity {
+}
+.product__item-img {
+}
+.product__item-subtitle {
+}
+.product_item-title {
+}
+.product__item-box-price {
+}
+.product__item-price {
+}
+.product__item-price-former {
+}
+.product__item-descriptions {
+}
+.product__item-descriptions-left {
+}
+.product__item-descriptions-right {
+}
+.product__item-sale {
+}
+.swiper-button-next {
+}
+.swiper-button-prev {
+}
 
 
 
@@ -462,6 +530,10 @@ body {
   .footer__contacts-box {
 	flex-direction: column;
   }
+  .button-error {
+	width: 100%;
+	padding: 14px 14px;
+}
 }
 
 
