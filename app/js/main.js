@@ -45,10 +45,25 @@ var swiperCompany = new Swiper(".companySwiper", {
     });
 
     var swiperDiscounts = new Swiper(".discountsSwiper", {
-      slidesPerView: 5,
-      spaceBetween: 23,
+      slidesPerView: 1,
+      breakpoints: {
+        400: {
+          spaceBetween: 12,
+          slidesPerView: 2,
+        },
+        600: {
+          slidesPerView: 3,
+        },
+        785: {
+          slidesPerView: 4,
+        },
+        1030: {
+          slidesPerView: 5,
+          spaceBetween: 23,
+        },
+      },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-discounts-button-right",
+        prevEl: ".swiper-discounts-button-left",
       },
     });
