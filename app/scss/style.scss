@@ -11,7 +11,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, input {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -440,13 +440,14 @@ body {
 .swiper-discounts-button-left {
 	transform: translateX(-40px);
 }
-.discounts-item {
+.product__slider-item {
 	background-color: #fff;
 }
 .product__item {
 	display: block;
 	position: relative;
 	padding: 35px 15px 16px;
+	width: 215px;
 }
 .product__item-img {
 	display: block;
@@ -577,6 +578,50 @@ body {
 }
 .breadcrumbs__list-item:last-child{
 	color: #213FDF;
+}
+.catalog {
+	
+}
+.catalog__wrapper {
+}
+.catalog__title {
+	margin-bottom: 25px;
+	color: #000;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: bold;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+}
+.catalog__inner-list {
+	background-color: #fff;
+}
+.catalog_functional {
+	padding: 14px 0 16px;
+	
+}
+.catalog__functional-form {
+	text-align: right;
+	padding-right: 30px;
+}
+.catalog__functional-form label {
+	margin-left: 25px;
+	margin-right: 10px;
+	color: #1D1D1E;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+}
+.catalog__functional-form select{
+	padding: 8px 13px;
+	background-color: #F8FBFF;
+	border: 1px solid #F8FBFF;
+	border-radius: 3px;
+	color: #1D1D1E;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: 400;
+	font-family: 'ProximaNova-Semibold', sans-serif;
 }
 
 
