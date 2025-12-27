@@ -67,3 +67,5 @@ var swiperCompany = new Swiper(".companySwiper", {
         prevEl: ".swiper-discounts-button-left",
       },
     });
+
+    $('.filter-style').styler();
