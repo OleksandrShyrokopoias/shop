@@ -674,7 +674,7 @@ body {
 	
 }
 .filter__item-drop {
-	margin: 40px 0;
+	margin: 22px 0 20px;
 	position: relative;
 	cursor: pointer;
 }
@@ -691,6 +691,9 @@ body {
 }
 .filter__item-drop--active::before {
 	transform: rotate(180deg);
+}
+.aside-filter__content-box {
+	margin-bottom: 13px;
 }
 .aside-filter__content-label {
 	font-size: 15px;
