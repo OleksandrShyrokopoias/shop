@@ -74,3 +74,9 @@ var swiperCompany = new Swiper(".companySwiper", {
       $(this).toggleClass('.filter__item-drop--active');
       $(this).next().slideToggle('200');
     });
+
+    $(".js-range-slider").ionRangeSlider({
+      type: "double",
+      min: 120,
+      max: 1256,
+    });
