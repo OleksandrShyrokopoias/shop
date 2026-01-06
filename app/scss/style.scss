@@ -692,6 +692,14 @@ body {
 .filter__item-drop--active::before {
 	transform: rotate(180deg);
 }
+.aside-filter__content {
+	max-height: 0;
+  	overflow: hidden;
+  	transition: max-height 0.3s ease-out;
+}
+.filter__item-drop--active + .aside-filter__content {
+  max-height: 1000px; /* Это значение должно быть достаточно большим, чтобы вместить весь контент */
+}
 .aside-filter__content-box {
 	margin-bottom: 13px;
 }
@@ -701,6 +709,24 @@ body {
 	font-weight: 400;
 	font-family: 'ProximaNova', sans-serif;
 	cursor: pointer;
+}
+.filter-more {
+	padding: 14px;
+	width: 100%;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
+	font-family: 'ProximaNova', sans-serif;
+	color: #C3C3C3;
+	background-color: transparent;
+	border: 1px solid #DEDEDE;
+	cursor: pointer;
+	transition: .3s linear;
+}
+.filter-more:hover {
+	color: #000;
+	border: 1px solid #DEDEDE;
+	transition: .3s linear;
 }
 .jq-checkbox, .jq-radio {
 	width: 20px;
@@ -721,6 +747,10 @@ body {
     border-left: none;
     transform: rotate(0);
 	background-image: url(../images/checked-arrow.svg);
+}
+.irs--flat {
+	top: -2px;
+	width: 95%;
 }
 .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
 	color: #000;

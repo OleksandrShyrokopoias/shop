@@ -16,7 +16,7 @@
 //     div.replaceWith(link);
 // });
 
- var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper", {
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,
@@ -25,7 +25,7 @@
         el: ".swiper-pagination",
         clickable: true,
       },
-    });
+});
 
 var swiperCompany = new Swiper(".companySwiper", {
       slidesPerView: 2,
@@ -42,9 +42,9 @@ var swiperCompany = new Swiper(".companySwiper", {
         nextEl: ".swiper-button-right",
         prevEl: ".swiper-button-left",
       },
-    });
+});
 
-    var swiperDiscounts = new Swiper(".discountsSwiper", {
+var swiperDiscounts = new Swiper(".discountsSwiper", {
       slidesPerView: 1,
       breakpoints: {
         400: {
@@ -66,17 +66,31 @@ var swiperCompany = new Swiper(".companySwiper", {
         nextEl: ".swiper-discounts-button-right",
         prevEl: ".swiper-discounts-button-left",
       },
-    });
+});
 
-    $('.filter-style').styler();
+document.querySelectorAll('.filter__item-drop').forEach(function(item) {
+  item.addEventListener('click', function() {
+    this.classList.toggle('filter__item-drop--active');
+    
+    var nextElement = this.nextElementSibling;
+    
+    if (nextElement && nextElement.classList.contains('aside-filter__content')) {
+      if (this.classList.contains('filter__item-drop--active')) {
+        // Когда элемент активен, показываем его с анимацией
+        nextElement.style.maxHeight = nextElement.scrollHeight + 'px';
+      } else {
+        // Когда элемент не активен, скрываем его
+        nextElement.style.maxHeight = '0';
+      }
+    }
+  });
+});
 
-    $('.filter__item-drop').on('click', function(){
-      $(this).toggleClass('.filter__item-drop--active');
-      $(this).next().slideToggle('200');
-    });
+$('.filter-style').styler();
 
-    $(".js-range-slider").ionRangeSlider({
+$(".js-range-slider").ionRangeSlider({
       type: "double",
       min: 120,
       max: 1256,
-    });
+});
+
