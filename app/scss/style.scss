@@ -789,6 +789,156 @@ body {
 .irs--flat .irs-handle.state_hover>i:first-child, .irs--flat .irs-handle:hover>i:first-child {
     background-color: #F8FBFF;
 }
+.product__card {
+}
+.product__card-wrapper {
+	display: flex;
+}
+.product__card-main {
+}
+.product__card-main-top {
+	padding: 16px 15px 15px 26px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	border-bottom: 1px solid #DEDEDE;
+}
+.product__card-title {
+	color: #000;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: bold;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+}
+.product__main-top-text {
+	color: #C3C3C3;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+}
+.product__card-main-inner {
+	display: flex;
+	gap: 3px;
+}
+.product__card-inner-box-img {
+	background-color: #fff;
+	border-right: 1px solid #DEDEDE;
+}
+.product__card-inner-box-aside {
+	background-color: #fff;
+	
+}
+.product__card-box-aside-wrapper {
+	
+}
+.product_card-inner-aside-header {
+	border-bottom: 1px solid #DEDEDE;
+}
+.product_card-inner-aside-header-box {
+	padding: 28px 20px 25px;
+}
+.product__card-box-aside-top {
+	margin-bottom: 49px;
+	padding-left: 26px;
+	position: relative;
+	color: #000;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+}
+.product__card-box-aside-top::before {
+	content: url(../images/check-pay.svg);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 21px;
+	height: 16px;
+}
+.product__card-box-price {
+	margin-bottom: 48px;
+	display: flex;
+	gap: 16px;
+	justify-content: space-between;
+}
+.product__card-price-new {
+	color: #000;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: bold;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+}
+.product__card-price-old {
+	color: #C3C3C3;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: bold;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+	text-decoration:line-through;
+}
+.product__card-buy {
+	width: 100%;
+	margin-bottom: 78px;
+	padding: 12px;
+	color: #F8FBFF;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+	background-color: #213FDF;
+	border: none;
+}
+.product__card-inner-aside-footer {
+	padding: 25px 25px 25px 20px;
+}
+.product__card-inner-footer-list-item {
+	margin-bottom: 6px;
+	color: #000;
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 400;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+}
+.product__card-pay {
+}
+.product__card-pay-header {
+	border-bottom: 1px solid #DEDEDE;
+}
+.product__card-pay-header-top {
+	display: flex;
+	justify-content: space-between;
+}
+.product__card-pay-header-top p {
+	padding-left: 30px;
+	position: relative;
+	color: #C3C3C3;
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: bold;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+}
+.product__card-pay-header-top p::before {
+	position: absolute;
+	content: url(../images/noun_payment.svg);
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 30px;
+}
+.product__card-pay-main {
+}
+.product__card-pay-main-title {
+}
+.product__card-pay-main-list {
+}
+.product__card-pay-main-list-item {
+}
+.product__card-pay-footer {
+}
+.product__card-pay-footer-title {
+}
  
 
 
