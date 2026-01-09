@@ -86,6 +86,52 @@ document.querySelectorAll('.filter__item-drop').forEach(function(item) {
   });
 });
 
+const tabButtons = document.querySelectorAll('.product-card-tab-btn');
+const tabContents = document.querySelectorAll('.product-card-tab-content');
+
+tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const tabId = button.dataset.tab;
+
+        // убираем активные классы
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+
+        // добавляем активные классы
+        button.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+    });
+});
+
+const headers = document.querySelectorAll('.accordion-header');
+
+// FAQ аккорд
+
+headers.forEach(header => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+
+        // закрываем остальные секции
+        headers.forEach(item => {
+            if (item !== header) {
+                item.classList.remove('active');
+                item.nextElementSibling.style.maxHeight = null;
+            }
+        });
+
+        // открываем / закрываем текущую
+        header.classList.toggle('active');
+
+        if (header.classList.contains('active')) {
+            content.style.maxHeight = content.scrollHeight + 'px';
+        } else {
+            content.style.maxHeight = null;
+        }
+    });
+});
+
+
+
 $('.filter-style').styler();
 
 $(".js-range-slider").ionRangeSlider({

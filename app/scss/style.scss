@@ -789,12 +789,10 @@ body {
 .irs--flat .irs-handle.state_hover>i:first-child, .irs--flat .irs-handle:hover>i:first-child {
     background-color: #F8FBFF;
 }
-.product__card {
-}
 .product__card-wrapper {
 	display: flex;
-}
-.product__card-main {
+	justify-content: space-between;
+	gap: 3px;
 }
 .product__card-main-top {
 	padding: 16px 15px 15px 26px;
@@ -819,19 +817,22 @@ body {
 	font-family: 'ProximaNova-Semibold', sans-serif;
 }
 .product__card-main-inner {
+	width: 100%;
 	display: flex;
+	justify-content: space-between;
 	gap: 3px;
 }
 .product__card-inner-box-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 577px;
 	background-color: #fff;
 	border-right: 1px solid #DEDEDE;
 }
 .product__card-inner-box-aside {
+	width: 303px;
 	background-color: #fff;
-	
-}
-.product__card-box-aside-wrapper {
-	
 }
 .product_card-inner-aside-header {
 	border-bottom: 1px solid #DEDEDE;
@@ -889,6 +890,7 @@ body {
 	font-family: 'ProximaNova-Semibold', sans-serif;
 	background-color: #213FDF;
 	border: none;
+	cursor: pointer;
 }
 .product__card-inner-aside-footer {
 	padding: 25px 25px 25px 20px;
@@ -902,16 +904,20 @@ body {
 	font-family: 'ProximaNova-Semibold', sans-serif;
 }
 .product__card-pay {
+	width: 287px;
+	background-color: #fff;
 }
 .product__card-pay-header {
+	padding: 19px 19px 19px 14px;
 	border-bottom: 1px solid #DEDEDE;
 }
 .product__card-pay-header-top {
+	margin-bottom: 16px;
 	display: flex;
 	justify-content: space-between;
 }
 .product__card-pay-header-top p {
-	padding-left: 30px;
+	padding-left: 50px;
 	position: relative;
 	color: #C3C3C3;
 	font-size: 14px;
@@ -923,23 +929,183 @@ body {
 	position: absolute;
 	content: url(../images/noun_payment.svg);
 	top: 0;
-	left: 0;
+	left: 4px;
 	width: 30px;
 	height: 30px;
 }
+.product__card-pay-header-list-item {
+	color: #000;
+	font-size: 13px;
+	line-height: 15px;
+	font-weight: 400;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+}
 .product__card-pay-main {
+	padding: 26px 16px 14px 14px;
+	border-bottom: 1px solid #DEDEDE;
 }
 .product__card-pay-main-title {
+	margin-bottom: 21px;
+	padding-left: 50px;
+	position: relative;
+	color: #C3C3C3;
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: bold;
+	font-family: 'ProximaNova-Semibold', sans-serif;
 }
-.product__card-pay-main-list {
+.product__card-pay-main-title::before {
+	position: absolute;
+	content: url(../images/noun_delivery.svg);
+	top: -10px;
+	left: 0;
+	width: 40px;
+	height: 40px;
 }
 .product__card-pay-main-list-item {
+	color: #000;
+	font-size: 13px;
+	line-height: 15px;
+	font-weight: 400;
+	font-family: 'ProximaNova-Semibold', sans-serif;
 }
 .product__card-pay-footer {
+	padding: 26px 14px 23px;
 }
 .product__card-pay-footer-title {
+	margin-bottom: 21px;
+	padding-left: 50px;
+	position: relative;
+	color: #C3C3C3;
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: bold;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+}
+.product__card-pay-footer-title::before {
+	position: absolute;
+	content: url(../images/noun_return.svg);
+	top: -10px;
+	left: 0;
+	width: 38px;
+	height: 38px;
+}
+.product__card-pay-footer p{
+	color: #000;
+	font-size: 13px;
+	line-height: 15px;
+	font-weight: 400;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+}
+
+// таби
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.tabs {
+    width: 400px;
+    margin: 50px auto;
+}
+
+.tabs__buttons {
+    display: flex;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    background: #eee;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.tab-btn:hover {
+    background: #ddd;
+}
+
+.tab-btn.active {
+    background: #fff;
+    border-bottom: 2px solid #007bff;
+    font-weight: bold;
+}
+
+.tabs__content {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.product-card-tab-content {
+    display: none;
+}
+
+.product-card-tab-content.active {
+    display: block;
 }
  
+body {
+    font-family: Arial, sans-serif;
+}
+
+// аккорд
+
+.accordion {
+    width: 400px;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.accordion-item:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 15px;
+    background: #f7f7f7;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion-header::after {
+    content: "+";
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.accordion-header.active::after {
+    content: "−";
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: #fff;
+    padding: 0 15px;
+}
+
+.accordion-content p {
+    margin: 15px 0;
+}
+
 
 
 
