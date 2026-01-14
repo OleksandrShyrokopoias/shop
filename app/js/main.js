@@ -86,8 +86,8 @@ document.querySelectorAll('.filter__item-drop').forEach(function(item) {
   });
 });
 
-const tabButtons = document.querySelectorAll('.product-card-tab-btn');
-const tabContents = document.querySelectorAll('.product-card-tab-content');
+const tabButtons = document.querySelectorAll('.tab-btn');
+const tabContents = document.querySelectorAll('.tab-content');
 
 tabButtons.forEach(button => {
     button.addEventListener('click', () => {
