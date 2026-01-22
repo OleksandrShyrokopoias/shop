@@ -1221,21 +1221,78 @@ video {
 .contacts__main-aside-social {
 	margin-top: 68px;
 }
-.contacts-box-form {
-	
+.contacts-form__top {
+	margin-bottom: 5px;
+	padding: 16px 26px;
+	background-color: #fff;
 }
-.container {
+.contacts-form__title {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #000;
+	font-family: 'ProximaNova-Semibold', sans-serif;
 }
 .contacts-form {
+	display: flex;
+	gap: 55px;
+	justify-content: space-between;
+	padding: 22px 31px 28px 31px;
+	background-color: #fff;
 }
 .contacts-form__left {
+	width: 50%;
 }
 .contacts-form__box-input {
+	margin-bottom: 10px;
+}
+.contacts-form label {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #1D1D1E;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+}
+.contacts-form input {
+	width: 60%;
+	height: 35px;
+	border: 1px solid #C3C3C3;
+	border-radius: 3px;
+}
+.contacts-form__box-input {
+	display: flex;
+	justify-content: space-between;
+	gap: 18px;
 }
 .contacts-form__right {
+	width: 50%;
+}
+.contacts-form__coment {
+	margin-bottom: 18px;
+	width: 71%;
+	height: 125px;
+	border: 1px solid #C3C3C3;
+	border-radius: 3px;
 }
 .contacts-form__button {
-
+	display: block;
+	margin-left: auto;
+	padding: 12px 29px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	font-family: 'ProximaNova-Semibold', sans-serif;
+	color: #F8FBFF;
+	background-color: #213FDF;
+	border: 1px solid transparent;
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+.contacts-form__button:hover {
+	color: #213FDF;
+	background-color: #F8FBFF;
+	transition: 0.3s ease;
+	border: 1px solid #213FDF;
 }
 
 
