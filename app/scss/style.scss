@@ -1166,6 +1166,10 @@ video {
 	padding: 50px 24px 30px;
 	background-color: #fff;
 }
+.contacts__aside-adress {
+	display: flex;
+	flex-direction: column;
+}
 .contacts__main-aside-descriptions a{
 	margin-bottom: 30px;
 	display: inline-block;
@@ -1333,6 +1337,37 @@ video {
 	.receipts__box-items {
 		gap: 12px;
 	}
+	.contacts__header {
+		padding: 12px 20px;
+	}
+	.contact__header-title {
+		font-size: 18px;
+	}
+	.contacts__main {
+		flex-direction: column;
+	}
+	.contacts__main-map {
+		width: 100%;
+	}
+	.contacts__main-map iframe{
+		width: 100%;
+	}
+	.contacts__main-aside {
+		width: 100%;
+	}
+	.contacts-form__title {
+		font-size: 18px;
+	}
+	.contacts-form {
+		flex-direction: column;
+		gap: 21px;
+	}
+	.contacts-form__left {
+		width: 100%;
+	}
+	.contacts-form__right {
+		width: 100%;
+	}
 }
   
 
@@ -1432,6 +1467,15 @@ video {
   } 
   .product__card-main-top {
 	flex-wrap: wrap;
+  }
+  .contacts-form__box-input {
+	flex-direction: column;
+  }
+  .contacts-form input {
+	width: 100%;
+  }
+  .contacts-form__coment {
+	width: 100%;
   }
 }
 
