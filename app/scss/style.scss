@@ -109,6 +109,11 @@ body {
 .menu-link-active {
 	color: #FFDF06;
 }
+.menu-link-active svg{
+	path {
+		fill: #FFDF06;
+	}
+}
 .menu__link:hover {
 	color: #FFDF06;
 	transition: all 0.3s ease;
@@ -242,6 +247,40 @@ body {
 	font-family: 'ProximaNova-Regular', sans-serif;
 	color: #C3C3C3;
 	text-align: center;
+}
+.header__bottom {
+	padding: 15px 0;
+	background-color: #F8FBFF;
+	border-bottom: 1px solid #DEDEDE;
+}
+.header__bottom-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.header__bottom-list {
+	display: flex;
+}
+.header__bottom-list-item {
+	padding: 0 30px;
+	border-right: 1px solid #DEDEDE;
+}
+.header__bottom-list-link {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.header__bottom-box-basket {
+	padding: 0 22px 0 18px;
+	border-right: 1px solid #DEDEDE;
+	border-left: 1px solid #DEDEDE;
+}
+.header__basket {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
 }
 #phone {
 	color: #fff;
